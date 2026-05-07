@@ -1,0 +1,237 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  padding: 70px 0;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+/* Row */
+
+.about-row {
+  align-items: center;
+}
+
+/* =========================
+   LEFT IMAGE
+========================= */
+
+.about-image-wrapper {
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.about-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+  transition: 0.4s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   MIDDLE CONTENT
+========================= */
+
+.about-content {
+  padding: 0 15px;
+}
+
+.about-small-title {
+  color: #c89a61;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.about-title {
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #111;
+  margin-bottom: 20px;
+  font-family: serif;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #666;
+  margin-bottom: 28px;
+  max-width: 470px;
+}
+
+/* Button */
+
+.about-btn {
+  background: #c89a61;
+  border: none;
+  color: #fff;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #b58449;
+}
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.features-wrapper {
+  padding-left: 30px;
+  border-left: 1px solid #dddddd;
+
+  /* This aligns title with ABOUT US */
+  padding-top: 2px;
+}
+
+.feature-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 35px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.feature-card {
+  display: flex;
+  gap: 15px;
+  transition: 0.3s ease;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #dddddd;
+  flex-shrink: 0;
+}
+
+.feature-card h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+}
+
+/* Section Heading */
+
+.section-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 60px;
+  font-family: serif;
+  position: relative;
+}
+
+.section-heading::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #c89a61;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1199px) {
+  .about-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .about-content {
+    padding: 0;
+    margin-top: 25px;
+  }
+
+  .features-wrapper {
+    padding-left: 0;
+    border-left: none;
+    margin-top: 40px;
+    padding-top: 0;
+  }
+
+  .about-title {
+    font-size: 2.4rem;
+  }
+
+  .about-description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 50px 0;
+  }
+
+  .about-image {
+    height: 300px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .feature-card h5 {
+    font-size: 0.95rem;
+  }
+
+  .feature-card p {
+    font-size: 0.92rem;
+  }
+
+  .section-heading {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+}

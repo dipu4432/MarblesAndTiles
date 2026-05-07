@@ -1,0 +1,137 @@
+/* banner.css */
+
+.hero-section {
+  position: relative;
+}
+
+/* Each Slide */
+.hero-slide {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 700px;
+}
+
+/* Small Top Text */
+.hero-top-text {
+  color: #c89a61;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Main Heading */
+.hero-title {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  font-family: serif;
+}
+
+/* .hero-title span {
+  color: #d4a56a;
+} */
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #f1f1f1;
+  margin-bottom: 35px;
+}
+
+/* Button */
+.explore-btn {
+  background: #c89a61 !important;
+  border: none !important;
+  padding: 14px 34px !important;
+  border-radius: 8px !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+
+.explore-btn:hover {
+  background: #b88950 !important;
+}
+
+/* Carousel Dots */
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.ampersand {
+  color: #c89a61;
+  font-size: 6rem;
+  font-family: serif;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 1;
+  margin-right: 8px;
+}
+
+.tiles-text {
+  color: #fff;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .hero-slide {
+    height: 85vh;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-slide {
+    height: 80vh;
+  }
+
+  .hero-content {
+    padding: 0 15px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .explore-btn {
+    padding: 12px 24px !important;
+    font-size: 0.95rem !important;
+  }
+
+  .ampersand {
+    font-size: 4rem;
+  }
+}

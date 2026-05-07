@@ -1,0 +1,74 @@
+/* navBar.css */
+
+.custom-navbar {
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  z-index: 999;
+}
+
+.brand-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222 !important;
+  font-family: serif;
+}
+
+.nav-links {
+  gap: 25px;
+}
+
+.nav-links .nav-link {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #222 !important;
+  transition: 0.3s;
+}
+
+.nav-links .nav-link:hover {
+  color: #c89a61 !important;
+}
+
+.nav-links .active-link {
+  color: #c89a61 !important;
+}
+
+.quote-btn {
+  background: #c89a61 !important;
+  border: none !important;
+  padding: 10px 24px !important;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px !important;
+  transition: 0.3s;
+}
+
+.quote-btn:hover {
+  background: #b3844f !important;
+}
+
+/* banner.css */
+
+/* Mobile Responsive */
+
+@media (max-width: 991px) {
+  /* navBar.css */
+  .nav-links {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .quote-btn-wrapper {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .brand-logo {
+    font-size: 1.6rem;
+  }
+
+  .nav-links .nav-link {
+    padding: 10px 0;
+  }
+
+  /* banner.css */
+}
