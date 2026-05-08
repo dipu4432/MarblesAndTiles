@@ -48,27 +48,42 @@
 
 /* banner.css */
 
-/* Mobile Responsive */
+/* =========================
+   MOBILE NAVBAR
+========================= */
 
 @media (max-width: 991px) {
-  /* navBar.css */
+
+  .custom-navbar {
+    padding: 12px 0 !important;
+  }
+
+  .navbar-collapse {
+    background: #f8f8f8;
+    padding: 15px 0 20px;
+  }
+
   .nav-links {
     gap: 10px;
-    margin-top: 20px;
-  }
-
-  .quote-btn-wrapper {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  .brand-logo {
-    font-size: 1.6rem;
+    margin-top: 15px;
   }
 
   .nav-links .nav-link {
-    padding: 10px 0;
+    padding: 12px 0;
+    font-size: 1rem;
   }
 
-  /* banner.css */
+  .quote-btn-wrapper {
+    margin-top: 18px;
+    margin-bottom: 5px;
+  }
+
+  .brand-logo {
+    font-size: 1.5rem;
+  }
+
+  .quote-btn {
+    width: auto;
+    padding: 10px 22px !important;
+  }
 }
