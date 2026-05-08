@@ -1,0 +1,253 @@
+/* =========================
+   PRODUCTS SECTION
+========================= */
+
+.products-section {
+  padding: 80px 0;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.products-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.products-heading h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+  font-family: serif;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.products-heading h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #c89a61;
+  display: block;
+  margin: 16px auto 0;
+  border-radius: 10px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.slider-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.arrow-btn {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background: #c89a61;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   PRODUCTS GRID
+========================= */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.35s ease;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+}
+
+.product-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.product-image-wrapper {
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.45s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.06);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.product-content {
+  padding: 20px;
+}
+
+.product-content h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.product-content p {
+  color: #666;
+  font-size: 0.96rem;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.product-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.details-btn {
+  background: transparent;
+  border: 1px solid #d8b07a;
+  color: #c89a61;
+  padding: 9px 16px;
+  border-radius: 7px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.details-btn:hover {
+  background: #c89a61;
+  color: #fff;
+}
+
+.cart-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 9px;
+  background: #c89a61;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.cart-btn:hover {
+  background: #b58449;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1199px) {
+  .products-heading h2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .products-section {
+    padding: 65px 0;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-image {
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-section {
+    padding: 55px 0;
+  }
+
+  .products-heading {
+    margin-bottom: 28px;
+  }
+
+  .products-heading h2 {
+    font-size: 2.1rem;
+  }
+
+  .products-heading h2::after {
+    width: 65px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .slider-buttons {
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .product-image {
+    height: 220px;
+  }
+
+  .product-content {
+    padding: 18px;
+  }
+
+  .product-content h4 {
+    font-size: 1rem;
+  }
+
+  .details-btn {
+    padding: 8px 14px;
+    font-size: 0.72rem;
+  }
+
+  .cart-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
