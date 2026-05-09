@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import "./style.css";
+import Logo from "../assets/Marbles_Logo.png";
 
 function NavBar() {
   const [expanded, setExpanded] = useState(false);
@@ -15,7 +16,7 @@ function NavBar() {
       <Container>
         {/* Logo */}
         <Navbar.Brand href="/" className="brand-logo">
-          Marble & Tiles
+          <img src={Logo} alt="Marble & Tiles Logo" className="img-fluid" />
         </Navbar.Brand>
 
         {/* Mobile Toggle */}

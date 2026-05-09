@@ -6,6 +6,14 @@
   z-index: 999;
 }
 
+/* Logo Fix */
+.brand-logo img {
+  height: 85px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .brand-logo {
   font-size: 2rem;
   font-weight: 700;
@@ -46,8 +54,6 @@
   background: #b3844f !important;
 }
 
-/* banner.css */
-
 /* =========================
    MOBILE NAVBAR
 ========================= */
@@ -80,6 +86,11 @@
 
   .brand-logo {
     font-size: 1.5rem;
+  }
+
+  /* Mobile Logo Size */
+  .brand-logo img {
+    height: 45px;
   }
 
   .quote-btn {
